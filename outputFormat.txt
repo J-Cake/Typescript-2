@@ -1,0 +1,2 @@
+variable.getInstance(variable.getInstance(console)["log"])
+variable.getInstance(variable.getInstance(console)["log"])(variable.getInstance(add)(1, 2))

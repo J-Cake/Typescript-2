@@ -1,0 +1,33 @@
+string x = "10"
+
+# comment
+
+string x = (any arg1, any arg2, any arg3)>
+	# function body
+	< 12 # return value
+
+# < TypeError: return type is of type "number", expected type "string"
+
+string y = (any arg1, any arg2, any arg3)>
+	# function body
+	< <string> 12 # return value
+
+# < 12
+
+if typeof x == "string" >
+	typeof x = "number"
+
+# function terminated without return
+
+void z = (any arg1, any arg2, any arg3)>
+	<[arg1, arg2, arg3]
+
+# < TypeError: return type is of type "object", expected type "void"
+# subroutine. returns nothing
+
+void a = e => true
+
+# < TypeError: return type is of type "boolean", expected type "void"
+# arrow function can be typeless
+
+e => true

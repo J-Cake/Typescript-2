@@ -1,8 +1,5 @@
-string x = "10";
-console.log(x);
+void start = ()>
+	console.log(add(1, 2))
 
-string y = function(a, b){
-    console.log(a, b);
-}
-
-y(10, 12);
+number add = (number a, number b)>
+	< a + b
